@@ -10,8 +10,7 @@ export default function Auth() {
     try {
       setLoading(true);
       const { error } = await supabase.auth.signIn(
-        { email },
-        { redirectTo: "https://youthful-keller-b401bb.netlify.app" }
+        { email }
       );
       if (error) throw error;
       alert("Check your email for the login link!");
