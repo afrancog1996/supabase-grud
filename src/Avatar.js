@@ -57,12 +57,12 @@ export default function Avatar({ url, size, onUpload }) {
   return (
     <Box sx={{ display: "flex", flexDirection: "column" }}>
       {avatarUrl ? (
-            <img
-              src={avatarUrl}
-              alt="Avatar"
-              className="avatar image"
-              style={{ height: size, width: size }}
-            />
+        <img
+          src={avatarUrl}
+          alt="Avatar"
+          className="avatar image"
+          style={{ height: size, width: size }}
+        />
       ) : (
         <div
           className="avatar no-image"
@@ -85,7 +85,6 @@ export default function Avatar({ url, size, onUpload }) {
           disabled={uploading}
         />
       </Button>
-    
     </Box>
   );
 }

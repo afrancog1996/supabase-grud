@@ -1,9 +1,9 @@
-import "./index.css";
-import { useState, useEffect } from "react";
-import { supabase } from "./supabaseClient";
-import Auth from "./Auth";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { useEffect, useState } from "react";
 import Account from "./Account";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
+import Auth from "./Auth";
+import "./index.css";
+import { supabase } from "./supabaseClient";
 
 export default function Home() {
   const [session, setSession] = useState(null);
